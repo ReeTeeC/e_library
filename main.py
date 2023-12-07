@@ -1,6 +1,8 @@
 from defs import *
 import time
 
+# ====================================== Создание базы если таковая отсутствует
+
 con = sqlite3.connect("data.db")
 cur = con.cursor()
 cur.execute("""
